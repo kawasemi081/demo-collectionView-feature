@@ -1,0 +1,32 @@
+disabled_rules: # rule identifiers to exclude from running
+# - force_cast
+#  - type_name
+#  - identifier_name
+#  - line_length
+included: # paths to include during linting. `--path` is ignored if present. takes precendence over `excluded`.
+  - collectionView-basics
+#excluded: # paths to ignore during linting. overridden by `included`.
+  # - Carthage
+  # - Pods
+# parameterized rules can be customized from this configuration file
+line_length:
+  warning: 300
+# parameterized rules are first parameterized as a warning level, then error level.
+type_body_length:
+  - 300 # warning
+  - 400 # error
+# parameterized rules are first parameterized as a warning level, then error level.
+identifier_name:
+  min_length: 2
+function_body_length:
+  - 300 # warning
+  - 400 # error
+cyclomatic_complexity:
+  warning: 30
+file_length:
+  - 600 #warning
+  - 700 #error
+function_parameter_count:
+  - 10 #warning
+large_tuple:
+  warning: 3
